@@ -19,10 +19,7 @@
 
   <link rel="stylesheet" href="css/style.css">
   <script>
-    // Tandai JS aktif sedini mungkin (animasi reveal hanya aktif bila JS berjalan)
     document.documentElement.classList.add('js');
-    try { if (window.self !== window.top || /[?&]embed=1/.test(location.search)) document.documentElement.classList.add('is-embedded'); }
-    catch (e) { document.documentElement.classList.add('is-embedded'); }
   </script>
 </head>
 <body>
@@ -102,17 +99,14 @@
         <li><a href="#kontak" class="nav-link">Kontak</a></li>
       </ul>
       <div class="nav-mobile-extra">
-        <button type="button" class="btn btn-outline btn-block" data-open-preview="pdf">
-          <svg class="ic"><use href="#i-book"/></svg> Lihat Brosur
-        </button>
+        <a href="assets/docs/company-profile-jl-proteksindo.pdf" target="_blank" class="btn btn-outline btn-block">
+          <svg class="ic"><use href="#i-download"/></svg> Unduh Brosur
+        </a>
         <a href="#kontak" class="btn btn-primary btn-block">Hubungi Kami</a>
       </div>
     </nav>
 
     <div class="nav-actions">
-      <button type="button" class="btn-preview" data-open-preview="device" aria-label="Buka Mode Preview">
-        <svg class="ic"><use href="#i-eye"/></svg><span>Preview</span>
-      </button>
       <a class="btn btn-primary btn-sm hide-sm" href="#kontak">Hubungi Kami</a>
       <button type="button" class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
         <span></span><span></span><span></span>
@@ -146,9 +140,9 @@
         </p>
         <div class="hero-cta" data-reveal="fade-up" style="--d:.4s">
           <a href="#layanan" class="btn btn-primary">Lihat Layanan <svg class="ic"><use href="#i-arrow-right"/></svg></a>
-          <button type="button" class="btn btn-ghost" data-open-preview="pdf">
-            <svg class="ic"><use href="#i-book"/></svg> Lihat Brosur
-          </button>
+          <a href="assets/docs/company-profile-jl-proteksindo.pdf" target="_blank" class="btn btn-ghost">
+            <svg class="ic"><use href="#i-download"/></svg> Unduh Brosur
+          </a>
         </div>
       </div>
 
@@ -613,7 +607,7 @@
         <li><svg class="ic"><use href="#i-pin"/></svg><span>Jl. Baranangsiang III Blok I No.7, Kota Bogor, Jawa Barat</span></li>
         <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:langgengproteksindo@gmail.com">langgengproteksindo@gmail.com</a></li>
       </ul>
-      <button type="button" class="btn btn-outline-white btn-sm" data-open-preview="pdf"><svg class="ic"><use href="#i-book"/></svg> Lihat Brosur</button>
+      <a href="assets/docs/company-profile-jl-proteksindo.pdf" target="_blank" class="btn btn-outline-white btn-sm"><svg class="ic"><use href="#i-download"/></svg> Unduh Brosur</a>
     </div>
   </div>
   <div class="container footer-bottom">
@@ -649,80 +643,7 @@
   </div>
 </div>
 
-<!-- ============ MODE PREVIEW ============ -->
-<div class="preview" id="preview" role="dialog" aria-modal="true" aria-label="Mode Preview" hidden>
-  <div class="pv-topbar">
-    <div class="pv-title">
-      <img src="assets/img/logo-mark.png" alt="" width="30" height="32">
-      <div><strong>Mode Preview</strong><small>JL Proteksindo</small></div>
-    </div>
-    <div class="pv-tabs" role="tablist" aria-label="Jenis preview">
-      <button type="button" class="pv-tab" role="tab" id="tabDevice" aria-controls="panelDevice" aria-selected="true" data-tab="device">
-        <svg class="ic"><use href="#i-monitor"/></svg><span>Website</span>
-      </button>
-      <button type="button" class="pv-tab" role="tab" id="tabPdf" aria-controls="panelPdf" aria-selected="false" data-tab="pdf">
-        <svg class="ic"><use href="#i-book"/></svg><span>Brosur</span>
-      </button>
-      <span class="pv-tab-ind" aria-hidden="true"></span>
-    </div>
-    <button type="button" class="pv-close" data-close-preview aria-label="Tutup preview"><svg class="ic"><use href="#i-x"/></svg><span>Tutup</span></button>
-  </div>
 
-  <!-- Panel: Device preview -->
-  <div class="pv-panel" id="panelDevice" role="tabpanel" aria-labelledby="tabDevice">
-    <div class="pv-toolbar">
-      <div class="seg" role="group" aria-label="Pilih perangkat">
-        <button type="button" class="seg-btn active" data-device="desktop" aria-pressed="true"><svg class="ic"><use href="#i-monitor"/></svg><span>Desktop</span></button>
-        <button type="button" class="seg-btn" data-device="tablet" aria-pressed="false"><svg class="ic"><use href="#i-tablet"/></svg><span>Tablet</span></button>
-        <button type="button" class="seg-btn" data-device="mobile" aria-pressed="false"><svg class="ic"><use href="#i-phone"/></svg><span>Mobile</span></button>
-      </div>
-      <div class="pv-tools">
-        <span class="pv-size" id="pvSize">1440 × 900</span>
-        <button type="button" class="icon-btn" id="pvRotate" aria-label="Putar orientasi" title="Putar orientasi" disabled><svg class="ic"><use href="#i-rotate"/></svg></button>
-        <button type="button" class="icon-btn" id="pvReload" aria-label="Muat ulang" title="Muat ulang"><svg class="ic"><use href="#i-refresh"/></svg></button>
-        <a class="icon-btn" id="pvNewTab" href="index.html" target="_blank" rel="noopener" aria-label="Buka di tab baru" title="Buka di tab baru"><svg class="ic"><use href="#i-external"/></svg></a>
-      </div>
-    </div>
-    <div class="pv-stage" id="pvStage">
-      <div class="device" id="device" data-device="desktop">
-        <div class="device-bar"><i></i><i></i><i></i><span>jlproteksindo.co.id</span></div>
-        <div class="device-notch" aria-hidden="true"></div>
-        <div class="device-screen">
-          <div class="device-loading" id="deviceLoading"><span class="spinner"></span></div>
-          <iframe id="pvFrame" title="Preview website" loading="lazy"></iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Panel: PDF / brosur preview -->
-  <div class="pv-panel" id="panelPdf" role="tabpanel" aria-labelledby="tabPdf" hidden>
-    <div class="pv-toolbar">
-      <div class="seg" role="group" aria-label="Mode tampilan">
-        <button type="button" class="seg-btn active" data-view="single" aria-pressed="true"><svg class="ic"><use href="#i-file"/></svg><span>Satu Halaman</span></button>
-        <button type="button" class="seg-btn" data-view="spread" aria-pressed="false"><svg class="ic"><use href="#i-columns"/></svg><span>Dua Halaman</span></button>
-      </div>
-      <div class="pv-tools">
-        <button type="button" class="icon-btn" id="bkZoomOut" aria-label="Perkecil" title="Perkecil"><svg class="ic"><use href="#i-zoom-out"/></svg></button>
-        <span class="pv-size" id="bkZoom">100%</span>
-        <button type="button" class="icon-btn" id="bkZoomIn" aria-label="Perbesar" title="Perbesar"><svg class="ic"><use href="#i-zoom-in"/></svg></button>
-        <button type="button" class="icon-btn" id="bkFull" aria-label="Layar penuh" title="Layar penuh"><svg class="ic"><use href="#i-maximize"/></svg></button>
-        <a class="icon-btn" href="assets/docs/company-profile-jl-proteksindo.pdf" download aria-label="Unduh PDF" title="Unduh PDF"><svg class="ic"><use href="#i-download"/></svg></a>
-      </div>
-    </div>
-    <div class="bk-stage" id="bkStage">
-      <button type="button" class="bk-arrow prev" id="bkPrev" aria-label="Halaman sebelumnya"><svg class="ic"><use href="#i-chev-left"/></svg></button>
-      <div class="bk-viewport" id="bkViewport">
-        <div class="bk-pages" id="bkPages"></div>
-      </div>
-      <button type="button" class="bk-arrow next" id="bkNext" aria-label="Halaman berikutnya"><svg class="ic"><use href="#i-chev-right"/></svg></button>
-    </div>
-    <div class="bk-footer">
-      <div class="bk-thumbs" id="bkThumbs"></div>
-      <span class="bk-counter" id="bkCounter">1 / 6</span>
-    </div>
-  </div>
-</div>
 
 <!-- Toast -->
 <div class="toast" id="toast" role="status" aria-live="polite"><svg class="ic"><use href="#i-check"/></svg><span></span></div>

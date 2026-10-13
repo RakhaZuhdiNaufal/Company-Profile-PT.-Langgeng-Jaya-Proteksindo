@@ -20,12 +20,8 @@ assets/docs/               -> file PDF company profile (tombol Unduh PDF)
 
 ## Fitur
 - Section: Beranda, Profil, Cara kerja Surety Bond, Budaya, Legalitas, Visi Misi, Layanan, Cara Kerja, Kontak
-- Mode Preview (tombol "Preview" di header, atau tekan tombol **P**):
-  - Tab **Website**: pratinjau Desktop / Tablet / Mobile + putar orientasi, muat ulang, buka di tab baru
-  - Tab **Brosur**: penampil halaman PDF (1 / 2 halaman), zoom, layar penuh, thumbnail,
-    navigasi panah keyboard & swipe, unduh PDF
-  - Bisa dibuka langsung lewat URL: `index.html#preview` atau `index.html#preview-pdf`
-- Menu mobile, scroll spy, progress bar, tombol kembali ke atas
+- Unduh Brosur PDF resmi perusahaan
+- Menu mobile responsif, scroll spy, progress bar, tombol kembali ke atas
 - Animasi saat scroll, counter angka, teks berganti otomatis, parallax hero
 - Modal detail layanan (bisa geser antar layanan) + isi otomatis form kontak
 - Salin nomor legalitas & email sekali klik
@@ -43,4 +39,3 @@ Edit variabel di bagian atas `css/style.css`:
 ## Catatan
 - Font "Plus Jakarta Sans" & peta Google Maps butuh koneksi internet; tanpa internet font otomatis
   diganti font sistem dan situs tetap berjalan normal.
-- Domain di bilah browser Mode Preview (`jlproteksindo.co.id`) hanya tampilan — ganti di `index.html`.
