@@ -43,17 +43,16 @@
 
   /* ---------- Preloader ---------- */
   var preloader = $('#preloader');
+  var preloaderBar = preloader ? $('.preloader-bar span', preloader) : null;
   function hidePreloader() {
     if (!preloader || preloader.classList.contains('done')) return;
     preloader.classList.add('done');
-    setTimeout(function () { if (preloader && preloader.parentNode) preloader.parentNode.removeChild(preloader); }, 700);
+    setTimeout(function () { if (preloader && preloader.parentNode) preloader.parentNode.removeChild(preloader); }, 600);
   }
-  if (isEmbedded) hidePreloader();
-  else {
-    if (document.readyState === 'complete') setTimeout(hidePreloader, 300);
-    else window.addEventListener('load', function () { setTimeout(hidePreloader, 300); });
-    setTimeout(hidePreloader, 3500); // pengaman bila ada aset yang lambat
+  if (preloaderBar) {
+    preloaderBar.addEventListener('animationend', hidePreloader);
   }
+  setTimeout(hidePreloader, reduceMotion ? 100 : 950);
 
   /* ---------- Tahun di footer ---------- */
   var yearEl = $('#year');
