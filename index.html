@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JL Proteksindo — PT. Langgeng Jaya Proteksindo | Surety Bond &amp; Insurance</title>
+  <meta name="description" content="PT. Langgeng Jaya Proteksindo (JL Proteksindo) — jasa pengurusan Asuransi Surety Bond konstruksi &amp; non konstruksi, asuransi kendaraan bermotor, property, cargo, dan bank garansi di Kota Bogor.">
+  <meta name="theme-color" content="#E41F28">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="JL Proteksindo — Surety Bond &amp; Insurance">
+  <meta property="og:description" content="Penyedia layanan proteksi yang dapat diandalkan dan dipercaya oleh Nasabah.">
+  <meta property="og:image" content="assets/img/logo.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script>
+    // Tandai JS aktif sedini mungkin (animasi reveal hanya aktif bila JS berjalan)
+    document.documentElement.classList.add('js');
+    try { if (window.self !== window.top || /[?&]embed=1/.test(location.search)) document.documentElement.classList.add('is-embedded'); }
+    catch (e) { document.documentElement.classList.add('is-embedded'); }
+  </script>
+</head>
+<body>
+
+<!-- ============ SVG ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></symbol>
+  <symbol id="i-ship" viewBox="0 0 24 24"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1 .6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M12 10v4"/><path d="M12 2v3"/></symbol>
+  <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 22h18"/><path d="M6 18v-7"/><path d="M10 18v-7"/><path d="M14 18v-7"/><path d="M18 18v-7"/><path d="M12 2 20 7H4z"/></symbol>
+  <symbol id="i-file-check" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/><path d="m9 15 2 2 4-4"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><path d="M14 2v6h6"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+  <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="m5 12 7-7 7 7M12 19V5"/></symbol>
+  <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><rect width="14" height="14" x="8" y="8" rx="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-monitor" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></symbol>
+  <symbol id="i-tablet" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-rotate" viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></symbol>
+  <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 16h5v5"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></symbol>
+  <symbol id="i-zoom-in" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></symbol>
+  <symbol id="i-zoom-out" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M8 11h6"/></symbol>
+  <symbol id="i-maximize" viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+  <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><path d="M4 22v-7"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></symbol>
+  <symbol id="i-clipboard" viewBox="0 0 24 24"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M9 12h6M9 16h4"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></symbol>
+  <symbol id="i-columns" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M12 3v18"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+</svg>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-inner">
+    <img src="assets/img/logo-mark.png" alt="" class="preloader-mark" width="86" height="90">
+    <div class="preloader-bar"><span></span></div>
+    <p class="preloader-text">JL PROTEKSINDO</p>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<a class="skip-link" href="#main">Lewati ke konten</a>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container nav-wrap">
+    <a class="brand" href="#home" aria-label="JL Proteksindo — Beranda">
+      <img src="assets/img/logo.png" alt="JL Proteksindo - Surety Bond &amp; Insurance" width="976" height="271">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Navigasi utama">
+      <ul class="nav-list">
+        <li><a href="#home" class="nav-link active">Beranda</a></li>
+        <li><a href="#profil" class="nav-link">Profil</a></li>
+        <li><a href="#budaya" class="nav-link">Budaya</a></li>
+        <li><a href="#legalitas" class="nav-link">Legalitas</a></li>
+        <li><a href="#visi-misi" class="nav-link">Visi Misi</a></li>
+        <li><a href="#layanan" class="nav-link">Layanan</a></li>
+        <li><a href="#kontak" class="nav-link">Kontak</a></li>
+      </ul>
+      <div class="nav-mobile-extra">
+        <button type="button" class="btn btn-outline btn-block" data-open-preview="pdf">
+          <svg class="ic"><use href="#i-book"/></svg> Lihat Brosur
+        </button>
+        <a href="#kontak" class="btn btn-primary btn-block">Hubungi Kami</a>
+      </div>
+    </nav>
+
+    <div class="nav-actions">
+      <button type="button" class="btn-preview" data-open-preview="device" aria-label="Buka Mode Preview">
+        <svg class="ic"><use href="#i-eye"/></svg><span>Preview</span>
+      </button>
+      <a class="btn btn-primary btn-sm hide-sm" href="#kontak">Hubungi Kami</a>
+      <button type="button" class="hamburger" id="hamburger" aria-label="Buka menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-backdrop" id="navBackdrop"></div>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true">
+      <span class="hb-grid"></span>
+      <span class="hb-tri hb-tri-red"></span>
+      <span class="hb-tri hb-tri-navy"></span>
+    </div>
+
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1 class="hero-title" data-reveal="fade-up" style="--d:.1s">
+          <span class="thin">Solusi Proteksi</span>
+          <span class="bold">Terpercaya</span>
+        </h1>
+        <p class="hero-company" data-reveal="fade-up" style="--d:.2s">PT. Langgeng Jaya Proteksindo</p>
+        <p class="hero-lead" data-reveal="fade-up" style="--d:.3s">
+          Mitra pengurusan proteksi untuk
+          <span class="typed-wrap"><span class="typed" id="typed" aria-live="polite">Surety Bond</span><span class="caret" aria-hidden="true"></span></span>
+          <br>— cepat, akurat, dan nyaman sesuai kebutuhan Anda.
+        </p>
+        <div class="hero-cta" data-reveal="fade-up" style="--d:.4s">
+          <a href="#layanan" class="btn btn-primary">Lihat Layanan <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+          <button type="button" class="btn btn-ghost" data-open-preview="pdf">
+            <svg class="ic"><use href="#i-book"/></svg> Lihat Brosur
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal="zoom" style="--d:.2s" aria-hidden="true">
+        <div class="hv-navy" data-parallax="18"></div>
+        <div class="hv-photo" data-parallax="-8">
+          <img src="assets/img/building.jpg" alt="" width="580" height="670">
+        </div>
+        <div class="hv-band" data-parallax="10"></div>
+        <div class="hv-orange" data-parallax="24"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="stats" data-reveal="fade-up" style="--d:.3s">
+        <div class="stat">
+          <span class="stat-num"><span data-count="4">0</span>+</span>
+          <span class="stat-label">Layanan Proteksi Utama</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num"><span data-count="2026" data-from="2000">2000</span></span>
+          <span class="stat-label">Tahun Berdiri</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num"><span data-count="3">0</span></span>
+          <span class="stat-label">Jalur Cargo: Darat, Laut &amp; Udara</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num"><span data-count="2">0</span></span>
+          <span class="stat-label">Segmen: Konstruksi &amp; Non Konstruksi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Surety Bond</span><i></i><span>Asuransi Kendaraan Bermotor</span><i></i><span>Asuransi Cargo</span><i></i><span>Bank Garansi</span><i></i><span>Asuransi Property</span><i></i>
+      <span>Surety Bond</span><i></i><span>Asuransi Kendaraan Bermotor</span><i></i><span>Asuransi Cargo</span><i></i><span>Bank Garansi</span><i></i><span>Asuransi Property</span><i></i>
+    </div>
+  </div>
+
+  <!-- ============ PROFIL ============ -->
+  <section class="section profile" id="profil">
+    <div class="container">
+      <div class="profile-grid">
+        <div class="profile-text">
+          <h2 class="sec-title" data-reveal="fade-up">
+            <span class="thin">Profile</span>
+            <span class="bold">Perusahaan</span>
+          </h2>
+          <div class="profile-cols">
+            <div data-reveal="fade-up" style="--d:.1s">
+              <p><strong>PT Langgeng Jaya Proteksindo</strong> didirikan dalam rangka komitmen membantu Perusahaan Konstruksi dan Non Konstruksi dalam pengurusan infrastruktur dan lainnya untuk meningkatkan pembangunan ekonomi nasional serta mendukung proses asuransi bidang-bidang lainnya.</p>
+              <p>Perusahaan didirikan pada tanggal <strong>09 Juni 2026</strong> melalui akta Nomor 73 di hadapan notaris Gufi Laura Patricia, S.H., M.Kn. Dalam menjalankan usahanya, Perusahaan dibentuk untuk menjalankan fungsi proses pengurusan asuransi jaminan.</p>
+            </div>
+            <div data-reveal="fade-up" style="--d:.2s">
+              <p><strong>PT Langgeng Jaya Proteksindo</strong> menawarkan Jasa Pengurusan Asuransi Surety Bond (Konstruksi dan Non Konstruksi).</p>
+              <p>Asuransi Surety Bond merupakan produk asuransi penjaminan oleh perusahaan sebagai <em>Surety</em> kepada Pemilik Proyek (<em>Obligee</em>), bahwa Pelaksana Proyek (<em>Principal</em>) akan menyelesaikan kewajibannya <q>sesuai dengan kesepakatan dalam kontrak</q>. Serta asuransi kendaraan bermotor, Property, Cargo, dan Bank Garansi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-media" data-reveal="fade-left">
+          <div class="pm-frame">
+            <img src="assets/img/containers.jpg" alt="Tumpukan kontainer di kapal kargo" width="1580" height="628" loading="lazy">
+          </div>
+          <span class="pm-tri" aria-hidden="true"></span>
+          <div class="pm-badge">
+            <span class="pm-badge-num">09.06</span>
+            <span class="pm-badge-text">Berdiri 2026<br><small>Akta No. 73</small></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diagram cara kerja Surety Bond -->
+      <div class="flow" data-reveal="fade-up">
+        <div class="flow-head">
+          <h3>Bagaimana Surety Bond Bekerja?</h3>
+          <p>Tiga pihak yang terlibat dalam setiap penjaminan.</p>
+        </div>
+        <div class="flow-track">
+          <div class="flow-node">
+            <span class="flow-icon"><svg class="ic"><use href="#i-building"/></svg></span>
+            <strong>Pelaksana Proyek</strong>
+            <p>Kontraktor / vendor yang wajib menyelesaikan pekerjaan sesuai kontrak.</p>
+          </div>
+          <div class="flow-line" aria-hidden="true"><span></span></div>
+          <div class="flow-node is-center">
+            <span class="flow-icon"><svg class="ic"><use href="#i-shield"/></svg></span>
+            <strong>Perusahaan Penjamin</strong>
+            <p>Menjamin bahwa Principal akan menyelesaikan kewajibannya.</p>
+          </div>
+          <div class="flow-line" aria-hidden="true"><span></span></div>
+          <div class="flow-node">
+            <span class="flow-icon"><svg class="ic"><use href="#i-users"/></svg></span>
+            <strong>Pemilik Proyek</strong>
+            <p>Pihak yang menerima jaminan dan terlindungi dari risiko gagal kontrak.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BUDAYA ============ -->
+  <section class="section culture" id="budaya">
+    <div class="container">
+      <div class="culture-head">
+        <h2 class="sec-title" data-reveal="fade-up">
+          <span class="thin">Budaya</span>
+          <span class="bold">Perusahaan</span>
+        </h2>
+        <div class="culture-text" data-reveal="fade-up" style="--d:.1s">
+          <p><strong>Budaya Perusahaan</strong> merupakan bagian yang teridentitas dari PT. Langgeng Jaya Proteksindo yang dituangkan untuk membangun kepercayaan pelanggan.</p>
+          <p>Budaya Perusahaan merupakan komitmen Perusahaan untuk selalu membangun dan menjaga kepercayaan pelanggan, bergerak secara dinamis dengan inovasi serta menjaga kerjasama dan kekompakan.</p>
+        </div>
+      </div>
+      <div class="values">
+        <article class="value-card" data-reveal="fade-up" style="--d:.05s">
+          <div class="value-media"><img class="value-bg" src="assets/img/facade.jpg" alt="" loading="lazy"></div>
+          <div class="value-body">
+            <h3>Kepercayaan</h3>
+            <p>Membangun dan menjaga kepercayaan pelanggan di setiap layanan.</p>
+          </div>
+        </article>
+        <article class="value-card" data-reveal="fade-up" style="--d:.12s">
+          <div class="value-media"><img class="value-bg" src="assets/img/truck.jpg" alt="" loading="lazy"></div>
+          <div class="value-body">
+            <h3>Dinamis</h3>
+            <p>Bergerak cepat dan adaptif mengikuti kebutuhan nasabah.</p>
+          </div>
+        </article>
+        <article class="value-card" data-reveal="fade-up" style="--d:.19s">
+          <div class="value-media"><img class="value-bg" src="assets/img/port.jpg" alt="" loading="lazy"></div>
+          <div class="value-body">
+            <h3>Inovasi</h3>
+            <p>Menghadirkan solusi proteksi yang relevan dan terus berkembang.</p>
+          </div>
+        </article>
+        <article class="value-card" data-reveal="fade-up" style="--d:.26s">
+          <div class="value-media"><img class="value-bg" src="assets/img/containers.jpg" alt="" loading="lazy"></div>
+          <div class="value-body">
+            <h3>Kekompakan</h3>
+            <p>Menjaga kerjasama tim yang solid demi hasil terbaik.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LEGALITAS ============ -->
+  <section class="section legal" id="legalitas">
+    <div class="legal-photo" aria-hidden="true"><img src="assets/img/port.jpg" alt="" loading="lazy" width="680" height="448"></div>
+    <div class="container">
+      <div class="legal-head">
+        <h2 class="sec-title light" data-reveal="fade-up">
+          <span class="thin">Legalitas</span>
+          <span class="bold">Perusahaan</span>
+        </h2>
+        <p data-reveal="fade-up" style="--d:.1s">Beroperasi secara resmi dan terdaftar. Klik ikon salin untuk menyalin nomor dokumen.</p>
+      </div>
+      <div class="legal-grid">
+        <div class="legal-item" data-reveal="fade-up" style="--d:0.05s">
+          <span class="legal-icon"><svg class="ic"><use href="#i-file-check"/></svg></span>
+          <div class="legal-body"><span class="legal-label">Akta Pendirian</span><span class="legal-value">No. 73 Tanggal 9 Juni 2026</span></div>
+          <button type="button" class="copy-btn" data-copy="No. 73 Tanggal 9 Juni 2026" aria-label="Salin Akta Pendirian"><svg class="ic"><use href="#i-copy"/></svg></button>
+        </div>
+        <div class="legal-item" data-reveal="fade-up" style="--d:0.1s">
+          <span class="legal-icon"><svg class="ic"><use href="#i-file"/></svg></span>
+          <div class="legal-body"><span class="legal-label">Akta Perubahan</span><span class="legal-value">–</span></div>
+        </div>
+        <div class="legal-item" data-reveal="fade-up" style="--d:0.15s">
+          <span class="legal-icon"><svg class="ic"><use href="#i-scale"/></svg></span>
+          <div class="legal-body"><span class="legal-label">SK Kehakiman</span><span class="legal-value">AHU&#8209;01372.<wbr>AH.02.01.<wbr>TAHUN 2023</span></div>
+          <button type="button" class="copy-btn" data-copy="AHU-01372.AH.02.01.TAHUN 2023" aria-label="Salin SK Kehakiman"><svg class="ic"><use href="#i-copy"/></svg></button>
+        </div>
+        <div class="legal-item" data-reveal="fade-up" style="--d:0.2s">
+          <span class="legal-icon"><svg class="ic"><use href="#i-clipboard"/></svg></span>
+          <div class="legal-body"><span class="legal-label">NIB</span><span class="legal-value">1106260137724</span></div>
+          <button type="button" class="copy-btn" data-copy="1106260137724" aria-label="Salin NIB"><svg class="ic"><use href="#i-copy"/></svg></button>
+        </div>
+        <div class="legal-item" data-reveal="fade-up" style="--d:0.25s">
+          <span class="legal-icon"><svg class="ic"><use href="#i-pin"/></svg></span>
+          <div class="legal-body"><span class="legal-label">Domisili</span><span class="legal-value">SKDP No. 656/<wbr>SKD/<wbr>ASO/<wbr>VI/<wbr>2026</span></div>
+          <button type="button" class="copy-btn" data-copy="SKDP No. 656/SKD/ASO/VI/2026" aria-label="Salin Domisili"><svg class="ic"><use href="#i-copy"/></svg></button>
+        </div>
+        <div class="legal-item" data-reveal="fade-up" style="--d:0.3s">
+          <span class="legal-icon"><svg class="ic"><use href="#i-file-check"/></svg></span>
+          <div class="legal-body"><span class="legal-label">SKT</span><span class="legal-value">S&#8209;29122/<wbr>SKT&#8209;WP&#8209;CT/<wbr>KPP.3310/<wbr>2026</span></div>
+          <button type="button" class="copy-btn" data-copy="S-29122/SKT-WP-CT/KPP.3310/2026" aria-label="Salin SKT"><svg class="ic"><use href="#i-copy"/></svg></button>
+        </div>
+        <div class="legal-item" data-reveal="fade-up" style="--d:0.35s">
+          <span class="legal-icon"><svg class="ic"><use href="#i-bank"/></svg></span>
+          <div class="legal-body"><span class="legal-label">NPWP</span><span class="legal-value">1000000009997906</span></div>
+          <button type="button" class="copy-btn" data-copy="1000000009997906" aria-label="Salin NPWP"><svg class="ic"><use href="#i-copy"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISI MISI ============ -->
+  <section class="section vm" id="visi-misi">
+    <div class="container">
+      <h2 class="sec-title center" data-reveal="fade-up">
+        <span class="thin">Visi – Misi</span>
+        <span class="bold">Perusahaan</span>
+      </h2>
+      <div class="vm-grid">
+        <div class="vm-cards">
+          <article class="vm-card vm-visi" data-reveal="fade-right">
+            <div class="vm-card-head">
+              <span class="vm-icon"><svg class="ic"><use href="#i-target"/></svg></span>
+              <h3>Visi</h3>
+            </div>
+            <p class="vm-quote">Menjadi perusahaan penyedia layanan proteksi yang dapat diandalkan dan dipercaya oleh Nasabah.</p>
+          </article>
+          <article class="vm-card vm-misi" data-reveal="fade-right" style="--d:.12s">
+            <div class="vm-card-head">
+              <span class="vm-icon navy"><svg class="ic"><use href="#i-flag"/></svg></span>
+              <h3>Misi</h3>
+            </div>
+            <ol class="vm-list">
+              <li><span>01</span><p>Memberikan layanan yang cepat, akurat, dan nyaman untuk memahami kebutuhan Nasabah.</p></li>
+              <li><span>02</span><p>Memberikan saran dan solusi untuk produk-produk asuransi yang relevan sesuai kebutuhan Nasabah.</p></li>
+            </ol>
+          </article>
+        </div>
+        <div class="vm-media" data-reveal="fade-left">
+          <div class="vm-photo"><img src="assets/img/office.jpg" alt="Gedung perkantoran" width="750" height="560" loading="lazy"></div>
+          <span class="vm-tri" aria-hidden="true"></span>
+          <span class="vm-tri2" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LAYANAN ============ -->
+  <section class="section services" id="layanan">
+    <div class="services-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="services-head">
+        <h2 class="sec-title" data-reveal="fade-up">
+          <span class="thin">Our</span>
+          <span class="bold">Services</span>
+        </h2>
+        <p data-reveal="fade-up" style="--d:.1s">Solusi proteksi menyeluruh untuk proyek, kendaraan, pengiriman barang, hingga jaminan bank. Klik kartu untuk melihat detail layanan.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card" data-service="0" data-reveal="fade-up" style="--d:.05s" tabindex="0" role="button" aria-label="Detail layanan Surety Bond">
+          <div class="sc-top"><span class="hex">1</span><span class="sc-icon"><svg class="ic"><use href="#i-shield"/></svg></span></div>
+          <h3>Surety Bond</h3>
+          <p>Produk asuransi penjamin (bukan asuransi kerugian biasa) yang memberikan jaminan kepada pemilik proyek (obligee) bahwa kontraktor atau vendor (principal) akan menyelesaikan kewajibannya sesuai kontrak.</p>
+          <span class="sc-more">Selengkapnya <svg class="ic"><use href="#i-arrow-right"/></svg></span>
+        </article>
+        <article class="service-card" data-service="1" data-reveal="fade-up" style="--d:.12s" tabindex="0" role="button" aria-label="Detail layanan Asuransi Kendaraan Bermotor">
+          <div class="sc-top"><span class="hex">2</span><span class="sc-icon"><svg class="ic"><use href="#i-car"/></svg></span></div>
+          <h3>Asuransi Kendaraan Bermotor</h3>
+          <p>Produk asuransi perlindungan finansial untuk kendaraan bermotor (sepeda motor dan mobil) dari risiko kerusakan dan kehilangan. Tersedia beberapa jenis sesuai kebutuhan.</p>
+          <span class="sc-more">Selengkapnya <svg class="ic"><use href="#i-arrow-right"/></svg></span>
+        </article>
+        <article class="service-card" data-service="2" data-reveal="fade-up" style="--d:.19s" tabindex="0" role="button" aria-label="Detail layanan Asuransi Cargo">
+          <div class="sc-top"><span class="hex">3</span><span class="sc-icon"><svg class="ic"><use href="#i-ship"/></svg></span></div>
+          <h3>Asuransi Cargo / Pengangkutan</h3>
+          <p>Proteksi finansial terhadap risiko kerusakan, kehilangan, atau pencurian barang selama proses pengiriman — melalui jalur darat, laut, maupun udara.</p>
+          <span class="sc-more">Selengkapnya <svg class="ic"><use href="#i-arrow-right"/></svg></span>
+        </article>
+        <article class="service-card" data-service="3" data-reveal="fade-up" style="--d:.26s" tabindex="0" role="button" aria-label="Detail layanan Bank Garansi">
+          <div class="sc-top"><span class="hex">4</span><span class="sc-icon"><svg class="ic"><use href="#i-bank"/></svg></span></div>
+          <h3>Bank Garansi</h3>
+          <p>Jaminan tertulis dari bank yang menyatakan kesanggupan membayar sejumlah uang kepada penerima jaminan (klien / pemilik proyek) jika nasabah bank gagal memenuhi kewajibannya.</p>
+          <span class="sc-more">Selengkapnya <svg class="ic"><use href="#i-arrow-right"/></svg></span>
+        </article>
+      </div>
+
+      <div class="service-extra" data-reveal="fade-up">
+        <span class="se-icon"><svg class="ic"><use href="#i-home"/></svg></span>
+        <p><strong>Juga tersedia: Asuransi Property.</strong> Butuh perlindungan untuk aset bangunan dan properti Anda? Konsultasikan bersama kami.</p>
+        <a href="#kontak" class="btn btn-primary btn-sm" data-prefill="Asuransi Property">Konsultasi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ALUR / PROSES ============ -->
+  <section class="section process" id="alur">
+    <div class="container">
+      <h2 class="sec-title center" data-reveal="fade-up">
+        <span class="thin">Cara Kerja</span>
+        <span class="bold">Kami</span>
+      </h2>
+      <p class="sec-sub" data-reveal="fade-up" style="--d:.1s">Proses yang sederhana dan transparan — dari konsultasi hingga jaminan terbit.</p>
+      <ol class="steps">
+        <li class="step" data-reveal="fade-up" style="--d:.05s">
+          <span class="step-num">01</span>
+          <span class="step-icon"><svg class="ic"><use href="#i-message"/></svg></span>
+          <h3>Konsultasi</h3>
+          <p>Sampaikan kebutuhan proyek atau aset Anda. Kami memahami kebutuhan secara cepat dan akurat.</p>
+        </li>
+        <li class="step" data-reveal="fade-up" style="--d:.12s">
+          <span class="step-num">02</span>
+          <span class="step-icon"><svg class="ic"><use href="#i-bulb"/></svg></span>
+          <h3>Saran &amp; Solusi</h3>
+          <p>Kami rekomendasikan produk asuransi yang paling relevan sesuai kebutuhan Anda.</p>
+        </li>
+        <li class="step" data-reveal="fade-up" style="--d:.19s">
+          <span class="step-num">03</span>
+          <span class="step-icon"><svg class="ic"><use href="#i-clipboard"/></svg></span>
+          <h3>Pengurusan</h3>
+          <p>Tim kami membantu kelengkapan dokumen dan proses pengajuan hingga tuntas.</p>
+        </li>
+        <li class="step" data-reveal="fade-up" style="--d:.26s">
+          <span class="step-num">04</span>
+          <span class="step-icon"><svg class="ic"><use href="#i-file-check"/></svg></span>
+          <h3>Jaminan Terbit</h3>
+          <p>Polis atau sertifikat jaminan terbit dan siap digunakan sesuai kontrak.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" aria-label="Ajakan">
+    <div class="container">
+    <div class="cta-inner" data-reveal="zoom">
+      <div>
+        <h2>Trust With Us</h2>
+        <p>PT. Langgeng Jaya Proteksindo — mitra proteksi yang dapat diandalkan dan dipercaya.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="#kontak" class="btn btn-white">Mulai Konsultasi <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+        <a href="assets/docs/company-profile-jl-proteksindo.pdf" class="btn btn-outline-white" download><svg class="ic"><use href="#i-download"/></svg> Unduh PDF</a>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK ============ -->
+  <section class="section contact" id="kontak">
+    <div class="container">
+      <div class="contact-head">
+        <h2 class="sec-title" data-reveal="fade-up">
+          <span class="thin">Hubungi</span>
+          <span class="bold">Kami</span>
+        </h2>
+        <p data-reveal="fade-up" style="--d:.1s">Kami siap membantu kebutuhan proteksi Anda. Kirim pesan dan tim kami akan segera merespons.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info" data-reveal="fade-right">
+          <div class="ci-panel">
+            <div>
+              <h3 class="ci-title">PT. Langgeng Jaya Proteksindo</h3>
+              <p class="ci-sub">Surety Bond &amp; Insurance</p>
+            </div>
+            <ul class="ci-list">
+              <li>
+                <span class="ci-icon"><svg class="ic"><use href="#i-pin"/></svg></span>
+                <div>
+                  <span class="ci-label">Office</span>
+                  <p>I7 Creative Community Space<br>Jl. Baranangsiang III Blok I No.7, Kel. Tegallega, Kec. Bogor Tengah, Kota Bogor, Jawa Barat</p>
+                </div>
+              </li>
+              <li>
+                <span class="ci-icon"><svg class="ic"><use href="#i-mail"/></svg></span>
+                <div>
+                  <span class="ci-label">Email</span>
+                  <p><a href="mailto:langgengproteksindo@gmail.com">langgengproteksindo@gmail.com</a></p>
+                </div>
+              </li>
+            </ul>
+            <div class="ci-actions">
+              <a class="btn btn-white btn-sm" href="https://www.google.com/maps/search/?api=1&amp;query=Jl.+Baranangsiang+III+Blok+I+No.7+Tegallega+Bogor+Tengah+Kota+Bogor" target="_blank" rel="noopener"><svg class="ic"><use href="#i-pin"/></svg> Buka Google Maps</a>
+              <button type="button" class="btn btn-outline-white btn-sm" data-copy="langgengproteksindo@gmail.com"><svg class="ic"><use href="#i-copy"/></svg> Salin Email</button>
+            </div>
+            <img src="assets/img/logo.png" alt="" class="ci-logo" width="976" height="271" loading="lazy">
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate data-reveal="fade-left">
+          <h3>Kirim Pesan</h3>
+          <div class="form-row">
+            <div class="field">
+              <label for="fName">Nama Lengkap <span>*</span></label>
+              <input id="fName" name="name" type="text" autocomplete="name" placeholder="Nama Anda" required minlength="2">
+              <small class="err" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="fCompany">Perusahaan</label>
+              <input id="fCompany" name="company" type="text" autocomplete="organization" placeholder="Nama perusahaan (opsional)">
+              <small class="err" aria-live="polite"></small>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="fEmail">Email <span>*</span></label>
+              <input id="fEmail" name="email" type="email" autocomplete="email" placeholder="nama@email.com" required>
+              <small class="err" aria-live="polite"></small>
+            </div>
+            <div class="field">
+              <label for="fPhone">No. Telepon / WhatsApp</label>
+              <input id="fPhone" name="phone" type="tel" autocomplete="tel" placeholder="08xx xxxx xxxx" inputmode="tel">
+              <small class="err" aria-live="polite"></small>
+            </div>
+          </div>
+          <div class="field">
+            <label for="fService">Layanan yang Dibutuhkan <span>*</span></label>
+            <div class="select-wrap">
+              <select id="fService" name="service" required>
+                <option value="">Pilih layanan…</option>
+                <option>Surety Bond</option>
+                <option>Asuransi Kendaraan Bermotor</option>
+                <option>Asuransi Cargo / Pengangkutan</option>
+                <option>Bank Garansi</option>
+                <option>Asuransi Property</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <small class="err" aria-live="polite"></small>
+          </div>
+          <div class="field">
+            <label for="fMessage">Pesan <span>*</span></label>
+            <textarea id="fMessage" name="message" rows="4" placeholder="Ceritakan kebutuhan Anda…" required minlength="10" maxlength="1000"></textarea>
+            <div class="field-meta"><small class="err" aria-live="polite"></small><small class="counter"><span id="msgCount">0</span>/1000</small></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><svg class="ic"><use href="#i-send"/></svg> Kirim via Email</button>
+          <p class="form-note">Tombol ini akan membuka aplikasi email Anda dengan pesan yang sudah terisi otomatis.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="assets/img/logo.png" alt="JL Proteksindo" class="logo-white" width="976" height="271" loading="lazy">
+      <p>PT. Langgeng Jaya Proteksindo — penyedia layanan proteksi yang dapat diandalkan dan dipercaya oleh Nasabah.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Perusahaan</h4>
+      <ul>
+        <li><a href="#profil">Profil Perusahaan</a></li>
+        <li><a href="#budaya">Budaya Perusahaan</a></li>
+        <li><a href="#legalitas">Legalitas</a></li>
+        <li><a href="#visi-misi">Visi &amp; Misi</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Layanan</h4>
+      <ul>
+        <li><a href="#layanan">Surety Bond</a></li>
+        <li><a href="#layanan">Asuransi Kendaraan</a></li>
+        <li><a href="#layanan">Asuransi Cargo</a></li>
+        <li><a href="#layanan">Bank Garansi</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak</h4>
+      <ul class="footer-contact">
+        <li><svg class="ic"><use href="#i-pin"/></svg><span>Jl. Baranangsiang III Blok I No.7, Kota Bogor, Jawa Barat</span></li>
+        <li><svg class="ic"><use href="#i-mail"/></svg><a href="mailto:langgengproteksindo@gmail.com">langgengproteksindo@gmail.com</a></li>
+      </ul>
+      <button type="button" class="btn btn-outline-white btn-sm" data-open-preview="pdf"><svg class="ic"><use href="#i-book"/></svg> Lihat Brosur</button>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year">2026</span> PT. Langgeng Jaya Proteksindo. All rights reserved.</p>
+    <p>Surety Bond &amp; Insurance</p>
+  </div>
+</footer>
+
+<button type="button" class="to-top" id="toTop" aria-label="Kembali ke atas">
+  <svg class="ring" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/></svg>
+  <svg class="ic"><use href="#i-arrow-up"/></svg>
+</button>
+
+<!-- ============ MODAL DETAIL LAYANAN ============ -->
+<div class="modal" id="serviceModal" role="dialog" aria-modal="true" aria-labelledby="smTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-dialog">
+    <button type="button" class="modal-close" data-close aria-label="Tutup"><svg class="ic"><use href="#i-x"/></svg></button>
+    <div class="sm-head">
+      <span class="hex" id="smNum">1</span>
+      <span class="sm-icon"><svg class="ic"><use id="smIcon" href="#i-shield"/></svg></span>
+    </div>
+    <h3 id="smTitle">Surety Bond</h3>
+    <p id="smDesc"></p>
+    <ul class="sm-points" id="smPoints"></ul>
+    <div class="sm-actions">
+      <a href="#kontak" class="btn btn-primary" id="smCta">Konsultasikan Layanan Ini <svg class="ic"><use href="#i-arrow-right"/></svg></a>
+      <div class="sm-nav">
+        <button type="button" class="icon-btn" id="smPrev" aria-label="Layanan sebelumnya"><svg class="ic"><use href="#i-chev-left"/></svg></button>
+        <button type="button" class="icon-btn" id="smNext" aria-label="Layanan berikutnya"><svg class="ic"><use href="#i-chev-right"/></svg></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODE PREVIEW ============ -->
+<div class="preview" id="preview" role="dialog" aria-modal="true" aria-label="Mode Preview" hidden>
+  <div class="pv-topbar">
+    <div class="pv-title">
+      <img src="assets/img/logo-mark.png" alt="" width="30" height="32">
+      <div><strong>Mode Preview</strong><small>JL Proteksindo</small></div>
+    </div>
+    <div class="pv-tabs" role="tablist" aria-label="Jenis preview">
+      <button type="button" class="pv-tab" role="tab" id="tabDevice" aria-controls="panelDevice" aria-selected="true" data-tab="device">
+        <svg class="ic"><use href="#i-monitor"/></svg><span>Website</span>
+      </button>
+      <button type="button" class="pv-tab" role="tab" id="tabPdf" aria-controls="panelPdf" aria-selected="false" data-tab="pdf">
+        <svg class="ic"><use href="#i-book"/></svg><span>Brosur</span>
+      </button>
+      <span class="pv-tab-ind" aria-hidden="true"></span>
+    </div>
+    <button type="button" class="pv-close" data-close-preview aria-label="Tutup preview"><svg class="ic"><use href="#i-x"/></svg><span>Tutup</span></button>
+  </div>
+
+  <!-- Panel: Device preview -->
+  <div class="pv-panel" id="panelDevice" role="tabpanel" aria-labelledby="tabDevice">
+    <div class="pv-toolbar">
+      <div class="seg" role="group" aria-label="Pilih perangkat">
+        <button type="button" class="seg-btn active" data-device="desktop" aria-pressed="true"><svg class="ic"><use href="#i-monitor"/></svg><span>Desktop</span></button>
+        <button type="button" class="seg-btn" data-device="tablet" aria-pressed="false"><svg class="ic"><use href="#i-tablet"/></svg><span>Tablet</span></button>
+        <button type="button" class="seg-btn" data-device="mobile" aria-pressed="false"><svg class="ic"><use href="#i-phone"/></svg><span>Mobile</span></button>
+      </div>
+      <div class="pv-tools">
+        <span class="pv-size" id="pvSize">1440 × 900</span>
+        <button type="button" class="icon-btn" id="pvRotate" aria-label="Putar orientasi" title="Putar orientasi" disabled><svg class="ic"><use href="#i-rotate"/></svg></button>
+        <button type="button" class="icon-btn" id="pvReload" aria-label="Muat ulang" title="Muat ulang"><svg class="ic"><use href="#i-refresh"/></svg></button>
+        <a class="icon-btn" id="pvNewTab" href="index.html" target="_blank" rel="noopener" aria-label="Buka di tab baru" title="Buka di tab baru"><svg class="ic"><use href="#i-external"/></svg></a>
+      </div>
+    </div>
+    <div class="pv-stage" id="pvStage">
+      <div class="device" id="device" data-device="desktop">
+        <div class="device-bar"><i></i><i></i><i></i><span>jlproteksindo.co.id</span></div>
+        <div class="device-notch" aria-hidden="true"></div>
+        <div class="device-screen">
+          <div class="device-loading" id="deviceLoading"><span class="spinner"></span></div>
+          <iframe id="pvFrame" title="Preview website" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Panel: PDF / brosur preview -->
+  <div class="pv-panel" id="panelPdf" role="tabpanel" aria-labelledby="tabPdf" hidden>
+    <div class="pv-toolbar">
+      <div class="seg" role="group" aria-label="Mode tampilan">
+        <button type="button" class="seg-btn active" data-view="single" aria-pressed="true"><svg class="ic"><use href="#i-file"/></svg><span>Satu Halaman</span></button>
+        <button type="button" class="seg-btn" data-view="spread" aria-pressed="false"><svg class="ic"><use href="#i-columns"/></svg><span>Dua Halaman</span></button>
+      </div>
+      <div class="pv-tools">
+        <button type="button" class="icon-btn" id="bkZoomOut" aria-label="Perkecil" title="Perkecil"><svg class="ic"><use href="#i-zoom-out"/></svg></button>
+        <span class="pv-size" id="bkZoom">100%</span>
+        <button type="button" class="icon-btn" id="bkZoomIn" aria-label="Perbesar" title="Perbesar"><svg class="ic"><use href="#i-zoom-in"/></svg></button>
+        <button type="button" class="icon-btn" id="bkFull" aria-label="Layar penuh" title="Layar penuh"><svg class="ic"><use href="#i-maximize"/></svg></button>
+        <a class="icon-btn" href="assets/docs/company-profile-jl-proteksindo.pdf" download aria-label="Unduh PDF" title="Unduh PDF"><svg class="ic"><use href="#i-download"/></svg></a>
+      </div>
+    </div>
+    <div class="bk-stage" id="bkStage">
+      <button type="button" class="bk-arrow prev" id="bkPrev" aria-label="Halaman sebelumnya"><svg class="ic"><use href="#i-chev-left"/></svg></button>
+      <div class="bk-viewport" id="bkViewport">
+        <div class="bk-pages" id="bkPages"></div>
+      </div>
+      <button type="button" class="bk-arrow next" id="bkNext" aria-label="Halaman berikutnya"><svg class="ic"><use href="#i-chev-right"/></svg></button>
+    </div>
+    <div class="bk-footer">
+      <div class="bk-thumbs" id="bkThumbs"></div>
+      <span class="bk-counter" id="bkCounter">1 / 6</span>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"><svg class="ic"><use href="#i-check"/></svg><span></span></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
